@@ -71,11 +71,7 @@ function doGet(e) {
     }
   }
 
-  return HtmlService
-    .createHtmlOutputFromFile('Index')
-    .setTitle('NK Inventory')
-    .addMetaTag('viewport', 'width=device-width, initial-scale=1, viewport-fit=cover')
-    .setXFrameOptionsMode(HtmlService.XFrameOptionsMode.ALLOWALL);
+  return respond({ok: false, error: 'Unknown action'});
 }
 
 function doPost(e) {
